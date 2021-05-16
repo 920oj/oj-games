@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=1920">
-    <title>Unity WebGL Player | おとうふタワーチャレンジ</title>
-  </head>
-  <body style="text-align: center">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=1920">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>おとうふタワーチャレンジ | OJ Games</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+      <p>OJ GAMES</p>
+    </div>
+  </header>
+  <div class="header-bottom-line"></div>
+  <div class="introduction">
+    <h2>おとうふタワーチャレンジ</h2>
+    <p>OTOUFU TOWER CHALLENGE</p>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <div class="game">
     <canvas id="unity-canvas" width=640 height=480 style="width: 640px; height: 480px; background: #231F20"></canvas>
     <script src="./Build/Build.loader.js"></script>
     <script>
@@ -22,5 +40,29 @@
         devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
-  </body>
+  </div>
+  <div class="detail">
+    <h3>このゲームについて</h3>
+    <p>おとうふを落とさないように積み上げる系ゲームです。マウスクリック（スマホの場合はタップ）のみで遊べます。</p>
+    <p>初めてUnityで作ったゲームです。お手柔らかにどうぞ。。。</p>
+
+    <h4>素材</h4>
+    <ul>
+      <li>BGM: 自作</li>
+      <li>SE: 効果音ラボ(<a href="https://soundeffect-lab.info/">https://soundeffect-lab.info/</a>)</li>
+    </ul>
+
+    <h4>リンク</h4>
+    <ul>
+      <li><a href="https://twitter.com/920OJ">作者Twitter</a></li>
+      <li><a href="https://tcu-dc.net/">東京都市大学デジタルコンテンツ研究会Webサイト</a></li>
+    </ul>
+  </div>
+  <footer>
+    <div class="footer-wrapper">
+      <p>&copy;2021 Junya Oiwa</p>
+    </div>
+  </footer>
+</body>
+
 </html>
